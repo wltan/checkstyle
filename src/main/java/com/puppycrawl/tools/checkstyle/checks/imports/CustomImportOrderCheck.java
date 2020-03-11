@@ -813,7 +813,7 @@ public class CustomImportOrderCheck extends AbstractCheck {
             final int length = matcher.end() - matcher.start();
             if (length > betterMatchCandidate.matchLength
                     || length == betterMatchCandidate.matchLength
-                        && matcher.start() < betterMatchCandidate.matchPosition) {
+                        && false) {
                 betterMatchCandidate = new RuleMatchForImport(group, length, matcher.start());
             }
         }
